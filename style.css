@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;600&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Rubik", sans-serif;
+  display: grid;
+  place-content: center;
+  background-color: #0d1323;
+  color: white;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.5fr 0.5fr;
+  gap: 20px;
+}
+
+.Report {
+  border-radius: 15px;
+  grid-row: 1/-1;
+  display: flex;
+  flex-direction: column;
+  background-color: #1d204b;
+}
+
+.Report .top {
+  border-radius: 15px;
+  padding: 20px;
+  padding-right: 100px;
+  background-color: #5746ea;
+}
+
+.Report img {
+  width: 70px;
+  border-radius: 50%;
+  border: 3px solid wheat;
+  margin-bottom: 30px;
+}
+
+.Report span {
+  display: block;
+  color: #bdc2ff;
+}
+
+.Report h1 {
+  overflow: hidden;
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 40px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 20px;
+  color: #bdc2ff;
+}
+
+.Report .clicks li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.active {
+  color: white;
+}
+
+li {
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #34397b;
+  border-radius: 15px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.top-color {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.top-color img {
+  width: 70px;
+}
+
+.Play,
+.Study,
+.Exercise,
+.Social,
+.SelfCare,
+.Work {
+  position: relative;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.Work {
+  background-color: hsl(15, 100%, 70%);
+}
+.Work img {
+  width: 60px;
+}
+
+.Play {
+  background-color: hsl(195, 74%, 62%);
+}
+
+.Study {
+  background-color: hsl(348, 100%, 68%);
+}
+
+.Exercise {
+  background-color: hsl(145, 58%, 55%);
+}
+.Exercise img {
+  width: 70px;
+}
+
+.Social {
+  background-color: hsl(264, 64%, 52%);
+}
+.Social img {
+  width: 50px;
+}
+
+.SelfCare {
+  background-color: hsl(43, 84%, 65%);
+}
+.SelfCare img {
+  width: 50px;
+}
+
+.stats {
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  height: 90%;
+  padding: 20px;
+  background-color: #1d204b;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.stats .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.stats .curr-h {
+  font-size: 3rem;
+  overflow: hidden;
+  font-weight: 100;
+}
+.stats .prev-h {
+  color: #bdc2ff;
+  margin-top: 5px;
+}
+
+.stats:hover {
+  background-color: #34397b;
+}
+
+@media (max-width: 400px) {
+  body {
+    display: block;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .Report {
+    width: 75%;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #1d204b;
+  }
+  .Report .top {
+    padding: 20px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: row;
+  }
+  .Report span {
+    margin-left: 20px;
+  }
+  .Report h1 {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 1.5rem;
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  .Play,
+  .Study,
+  .Exercise,
+  .Social,
+  .SelfCare,
+  .Work {
+    width: 75%;
+    margin-bottom: 50px;
+  }
+  .stats {
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    height: 80px;
+    padding: 10px;
+    background-color: #1d204b;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .stats .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .stats .curr-h {
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+  .stats .prev-h {
+    color: #bdc2ff;
+    margin-top: 5px;
+    font-weight: 100;
+  }
+  .stats .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Exercise {
+    margin-bottom: 70px;
+  }
+}/*# sourceMappingURL=style.css.map */
